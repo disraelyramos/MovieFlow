@@ -1,0 +1,111 @@
+/* Sidebar con estilo Argon / Material */
+.sidebar {
+    background: linear-gradient(180deg, #1e1e2f 0%, #2b2b40 100%);
+    color: white;
+    width: 250px;
+    border-radius: 0 16px 16px 0;
+    padding: 20px;
+    min-height: 100vh;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0 !important;
+}
+
+/* Encabezado del sidebar */
+.sidebar-header h5,
+.sidebar-header h6 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Enlaces principales */
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+    padding: 12px 18px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+/* Submenús */
+.sidebar .collapse {
+    background-color: #36445a;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 6px 0;
+    margin-top: 6px;
+}
+
+.sidebar .collapse .nav-link {
+    padding-left: 32px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.sidebar .collapse .nav-link:hover {
+    background-color: #45566f;
+}
+
+/* Control de submenú */
+.submenu {
+    display: none;
+    padding-left: 1rem;
+}
+
+.submenu.show {
+    display: block;
+}
+
+.toggle-arrow {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+.menu-wrapper {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Sidebar ya está bien definido */
+
+#detalle-contenido {
+    flex-grow: 1;
+    padding: 2rem 2rem;
+    background-color: #f4f4f7;
+    overflow-x: auto;
+    width: calc(100% - 250px); /* Ajuste al ancho real si tu sidebar tiene 250px */
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
